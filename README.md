@@ -6,4 +6,6 @@ Comandos de ayuda:
 
 * posterior a crear la nueva aplicacion ir a esa carpeta con cd ruta
 
-* luego generar un servidor locar con: ng serve --open
+* luego generar un servidor locar con: ng serve --
+
+* con ng g c <nombre del componente>, se pueden ir agregando nuevos nombres
