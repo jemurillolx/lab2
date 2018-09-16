@@ -8,6 +8,8 @@ import { CuadrocontenidoComponent } from './cuadrocontenido/cuadrocontenido.comp
 import { FormularioagregarComponent } from './formularioagregar/formularioagregar.component';
 import { RutinasComponent } from './rutinas/rutinas.component';
 import { AtletasComponent } from './atletas/atletas.component';
+import { FormularioeditarComponent } from './formularioeditar/formularioeditar.component';
+import { FormularioeliminarComponent } from './formularioeliminar/formularioeliminar.component';
       
 
     
@@ -24,7 +26,9 @@ const routes: Routes = [
     CuadrocontenidoComponent,
     FormularioagregarComponent,
     RutinasComponent,
-    AtletasComponent
+    AtletasComponent,
+    FormularioeditarComponent,
+    FormularioeliminarComponent
   ],
   imports: [
     BrowserModule,
