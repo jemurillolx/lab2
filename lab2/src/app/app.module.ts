@@ -9,12 +9,14 @@ import { FormularioagregarComponent } from './formularioagregar/formularioagrega
 import { RutinasComponent } from './rutinas/rutinas.component';
 import { FormularioeditarComponent } from './formularioeditar/formularioeditar.component';
 import { FormularioeliminarComponent } from './formularioeliminar/formularioeliminar.component';
-      
+import { ListadeportistasComponent } from './listadeportistas/listadeportistas.component';
+  
 
-    
 const routes: Routes = [
   { path: 'grabardatos', component: FormularioagregarComponent },
   { path: 'inicio', component: CuadrocontenidoComponent},
+  { path: 'rutinas', component: RutinasComponent},
+  { path: 'crossfiters', component: ListadeportistasComponent},
   { path: '', component: CuadrocontenidoComponent}
 ];
 
@@ -26,7 +28,8 @@ const routes: Routes = [
     FormularioagregarComponent,
     RutinasComponent,
     FormularioeditarComponent,
-    FormularioeliminarComponent
+    FormularioeliminarComponent,
+    ListadeportistasComponent
   ],
   imports: [
     BrowserModule,
