@@ -10,13 +10,15 @@ import { RutinasComponent } from './rutinas/rutinas.component';
 import { FormularioeditarComponent } from './formularioeditar/formularioeditar.component';
 import { FormularioeliminarComponent } from './formularioeliminar/formularioeliminar.component';
 import { ListadeportistasComponent } from './listadeportistas/listadeportistas.component';
-  
+
 
 const routes: Routes = [
   { path: 'grabardatos', component: FormularioagregarComponent },
   { path: 'inicio', component: CuadrocontenidoComponent},
   { path: 'rutinas', component: RutinasComponent},
   { path: 'crossfiters', component: ListadeportistasComponent},
+  { path: 'editar', component: FormularioeditarComponent},
+  { path: 'eliminar', component: FormularioeliminarComponent},
   { path: '', component: CuadrocontenidoComponent}
 ];
 
