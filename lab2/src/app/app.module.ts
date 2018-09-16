@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
+import { CuadrocontenidoComponent } from './cuadrocontenido/cuadrocontenido.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CabeceraComponent
+    CabeceraComponent,
+    CuadrocontenidoComponent
   ],
   imports: [
     BrowserModule
