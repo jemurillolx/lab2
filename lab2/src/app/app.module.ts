@@ -7,6 +7,7 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { CuadrocontenidoComponent } from './cuadrocontenido/cuadrocontenido.component';
 import { FormularioagregarComponent } from './formularioagregar/formularioagregar.component';
 import { RutinasComponent } from './rutinas/rutinas.component';
+import { AtletasComponent } from './atletas/atletas.component';
       
 
     
@@ -22,7 +23,8 @@ const routes: Routes = [
     CabeceraComponent,
     CuadrocontenidoComponent,
     FormularioagregarComponent,
-    RutinasComponent
+    RutinasComponent,
+    AtletasComponent
   ],
   imports: [
     BrowserModule,
