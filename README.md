@@ -9,3 +9,9 @@ Comandos de ayuda:
 * luego generar un servidor locar con: ng serve --open
 
 * con ng g c <nombre del componente>, se pueden ir agregando nuevos nombres
+
+* Para ejecutar el proyecto: 
+    -primero se debe entrar a la carpeta del proyecto que posee el mismo nombre que la carpeta principal:
+    cd lab2
+    -Posterirormente, ya ejecutar el servidor local con:
+     ng serve --open
