@@ -1,5 +1,5 @@
 export class Deportista {
-  id: number;
+  id:  0;
   nombre: string;
   pais: string;
 }
