@@ -11,7 +11,7 @@ export class PersonservicesService {
     this.personas = [];
    }
 
-   getPersona(): Persona[] {
+   getPersons(): Persona[] {
      if (localStorage.getItem('personas') === null) {
        this.personas = [];
      } else {

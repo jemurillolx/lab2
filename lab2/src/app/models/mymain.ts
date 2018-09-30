@@ -1,3 +1,7 @@
 export  interface Persona {
-  title: String;
+  nombre: String;
+  correo: String;
+  edad: number;
+  cumpleanios: Date;
+  activo: boolean;
 }
