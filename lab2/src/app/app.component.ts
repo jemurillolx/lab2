@@ -6,9 +6,6 @@ import { Deportista } from './models/deportista';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  DeportistaArray: Deportista[] = [
-    {id: 1, nombre: 'Jorge', pais: 'Guatemala'},
-    {id: 2, nombre: 'Emilio', pais: 'Guatemala'}
-  ];
+
 
 }

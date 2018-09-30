@@ -6,28 +6,28 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      <div class="card mt-4">
+      <div class="card mt-4 text-white bg-secondary mb-3"  >
         <div class="card-body">
           <div class="card-title">
             Insert a new poeple
           </div>
           <div type="form-group">
-            <input type="text" [(ngModel)]="selectedDeportista.nombre" placeholder="Agregar el Nombre" id="">
+            <input type="text" class="form-control" [(ngModel)]="selectedDeportista.nombre" placeholder="Agregar el Nombre" id="">
           </div>
           <div type="form-group">
-            <input type="text" [(ngModel)]="selectedDeportista.pais" placeholder="Agregar el Pais" id="">
+            <input type="text" class="form-control  mt-2 "  [(ngModel)]="selectedDeportista.pais" placeholder="Agregar el Pais" id="">
           </div>
           <div type="form-group">
-            <input type="text" [(ngModel)]="selectedDeportista.profesion" placeholder="Agregar la profesión" id="">
+            <input type="text" class="form-control  mt-2 "  [(ngModel)]="selectedDeportista.profesion" placeholder="Agregar la profesión" id="">
           </div>
           <div type="form-group">
-            <input type="number" [(ngModel)]="selectedDeportista.edad" placeholder="Agregar la edad " id="">
+            <input type="number" class="form-control  mt-2 "  [(ngModel)]="selectedDeportista.edad" placeholder="Agregar la edad " id="">
           </div>
           <div type="form-group">
-            <input type="text" [(ngModel)]="selectedDeportista.correo" placeholder="Agregar el correo" id="">
+            <input type="text" class="form-control  mt-2 "  [(ngModel)]="selectedDeportista.correo" placeholder="Agregar el correo" id="">
           </div>
-          <button (click)="AddOrEdit()" class="btn btn-primary">Grabar</button>
-          <button *ngIf="selectedDeportista.id !== 0 && DeportistaArray.length > 0" class="btn btn-danger" (click)="eliminarDeportista()">Eliminar</button>
+          <button (click)="AddOrEdit()" class="btn btn-primary  mt-2">Grabar</button>
+          <button *ngIf="selectedDeportista.id !== 0 && DeportistaArray.length > 0" class="btn btn-danger mt-2" (click)="eliminarDeportista()">Eliminar</button>
         </div>
       </div>
       <ul class="list-group">
@@ -35,7 +35,7 @@
           [class.active]="deportista == selectedDeportista">
 
           <span class="badge badge-primary">{{deportista.nombre}}</span>
-          {{deportista.profesion }} - {{deportista.pais}} - {{deportista.edad}} - {{deportista.correo}}
+          -> Profesión: {{deportista.profesion }} - País: {{deportista.pais}} - Edad: {{deportista.edad}} - Correo: {{deportista.correo}}
         </li>
       </ul>
 
