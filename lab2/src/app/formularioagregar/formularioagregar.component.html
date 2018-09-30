@@ -34,8 +34,8 @@
         <li *ngFor="let deportista of DeportistaArray" class="list-group-item list-group-item-action" (click)="opneForEdit(deportista)"
           [class.active]="deportista == selectedDeportista">
 
-          <span class="badge badge-primary">{{deportista.id}}</span>
-          {{deportista.nombre }} - {{deportista.pais}} - {{deportista.edad}}
+          <span class="badge badge-primary">{{deportista.nombre}}</span>
+          {{deportista.profesion }} - {{deportista.pais}} - {{deportista.edad}} - {{deportista.correo}}
         </li>
       </ul>
 
