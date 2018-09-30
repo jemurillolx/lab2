@@ -17,6 +17,7 @@ export class FormularioagregarComponent implements OnInit {
   selectedDeportista: Deportista = new Deportista();
   /* */
   constructor() {
+    this.selectedDeportista.id = 0;
   }
   ngOnInit() {
   }
@@ -27,14 +28,13 @@ export class FormularioagregarComponent implements OnInit {
       /*para limpiar los datos */
     /*////}*/
     this.selectedDeportista = new Deportista();
+    this.selectedDeportista.id = 0;
   }
   eliminarDeportista() {
    if (confirm('Seguro de borrar al Deportista?') && this.DeportistaArray.length > 0) {
     this.DeportistaArray = this.DeportistaArray.filter(y => y !== this.selectedDeportista);
     this.selectedDeportista = new Deportista();
-    let ms: string;
-    ms =  this.selectedDeportista.id.toString() + 'ke';
-     alert(ms);
+    this.selectedDeportista.id = 0;
    }
   }
   opneForEdit(deportista: Deportista) {
