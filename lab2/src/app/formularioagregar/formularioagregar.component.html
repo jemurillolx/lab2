@@ -8,31 +8,34 @@
     <div class="col-md-8">
       <div class="card mt-4">
         <div class="card-body">
-            <div class="card-title">
-              Insert a new poeple
-            </div>
-            <div type="form-group">
-              <input type="text" [(ngModel)]="selectedDeportista.nombre" placeholder="Agregar el Nombre" id="">
-            </div>
-            <div type="form-group">
-              <input type="text" [(ngModel)]="selectedDeportista.pais" placeholder="Agregar el Pais" id="">
-            </div>
-            <button (click)="AddOrEdit()" class="btn btn-primary">Grabar</button>
-            <button *ngIf="selectedDeportista.id !== 0 && DeportistaArray.length > 0"
-            class="btn btn-danger"
-            (click)="eliminarDeportista()"
-            >Eliminar</button>
+          <div class="card-title">
+            Insert a new poeple
           </div>
+          <div type="form-group">
+            <input type="text" [(ngModel)]="selectedDeportista.nombre" placeholder="Agregar el Nombre" id="">
+          </div>
+          <div type="form-group">
+            <input type="text" [(ngModel)]="selectedDeportista.pais" placeholder="Agregar el Pais" id="">
+          </div>
+          <div type="form-group">
+            <input type="text" [(ngModel)]="selectedDeportista.profesion" placeholder="Agregar la profesión" id="">
+          </div>
+          <div type="form-group">
+            <input type="number" [(ngModel)]="selectedDeportista.edad" placeholder="Agregar la edad " id="">
+          </div>
+          <div type="form-group">
+            <input type="text" [(ngModel)]="selectedDeportista.correo" placeholder="Agregar el correo" id="">
+          </div>
+          <button (click)="AddOrEdit()" class="btn btn-primary">Grabar</button>
+          <button *ngIf="selectedDeportista.id !== 0 && DeportistaArray.length > 0" class="btn btn-danger" (click)="eliminarDeportista()">Eliminar</button>
+        </div>
       </div>
       <ul class="list-group">
-          <li
-          *ngFor="let deportista of DeportistaArray"
-          class="list-group-item list-group-item-action"
-          (click)="opneForEdit(deportista)"
+        <li *ngFor="let deportista of DeportistaArray" class="list-group-item list-group-item-action" (click)="opneForEdit(deportista)"
           [class.active]="deportista == selectedDeportista">
 
           <span class="badge badge-primary">{{deportista.id}}</span>
-          {{deportista.nombre }} - {{deportista.pais}}
+          {{deportista.nombre }} - {{deportista.pais}} - {{deportista.edad}}
         </li>
       </ul>
 
